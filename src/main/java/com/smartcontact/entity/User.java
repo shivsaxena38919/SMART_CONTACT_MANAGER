@@ -30,7 +30,7 @@ public class User {
 	private String password;
 	private String image;
 	
-	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "user")
 	private List<Contact> contact=new ArrayList<>();
 	
 	
